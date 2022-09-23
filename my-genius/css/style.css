@@ -50,3 +50,8 @@ body {
 #indextitle {
     text-decoration: underline;
 }
+
+#side-pic {
+    display: block;
+    float: right;
+}
