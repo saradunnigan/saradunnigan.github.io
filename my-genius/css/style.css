@@ -54,4 +54,9 @@ body {
 #side-pic {
     display: block;
     float: right;
+    border-radius: 4px;
+}
+
+.space {
+    height: 100px;
 }
