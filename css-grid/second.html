@@ -6,101 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Page</title>
-    <style>
-        .nav {
-            background-color: teal;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        .nav li {
-            float: left;
-        }
-        
-        .nav li a {
-            display: block;
-            padding: 14px 16px;
-            background-color: teal;
-            text-align: center;
-            text-decoration: none;
-            font-size: large;
-            color: white;
-            font-family: rockwell, sans-serif;
-            font-weight: 400;
-            font-style: italic;
-        }
-        
-        .nav li a:hover {
-            background-color: rgb(146, 189, 237);
-        }
-        
-        body {
-            background-color: rgb(41, 74, 112);
-            font-family: rockwell, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: auto auto 10% auto auto;
-        }
-        
-        .grid-item {
-            background-color: lightsteelblue;
-            text-align: center;
-            font-size: 30px;
-            padding: 20px;
-        }
-        
-        .navmenu {
-            grid-column: 1 /span 5;
-            grid-row: 1;
-        }
-        
-        .title {
-            grid-column: 1 /span 2;
-            grid-row: 1 /span 2;
-        }
-        
-        .mainpic {
-            grid-column: 3 /span 2;
-            grid-row: 1 /span 2;
-        }
-        
-        .text {}
-        
-        .team {}
-        
-        .blank {}
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="grid-container">
         <div class="grid-item navmenu">
+            <h1 style="font-size: 30px">Eastside Preparatory Times</h1>
             <ul class="nav">
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="second.html">Menu</a></li>
             </ul>
         </div>
-        <div class="grid-item title">
-            <h1>Check Our Winter Collection</h1>
-            <p>There's nothing we haven't thought of so you can just take care of enjoying your rides.</p>
+        <div class="grid-item mainpic"> <img src="images/deer.jpg" alt="picture of a deer"></div>
+        <div class="grid-item content1">
+            <p>Web Design class wins first place!</p>
+            <p>lorem ipsum siem is iem ibuejimejo l happy glad mayhem becasue plaese why and now I am. Wow! I really like. congrats.</p>
         </div>
-        <div class="grid-item mainpic"><img src="images/mainpic.jpg" alt="snowboarder"></div>
-        <div class="grid-item pic2"></div>
-        <div class="grid-item text">
-            <p>Find Protest Shop</p>
+        <div class="grid-item content2">
+            <p>Bomb Cyclone?</p>
+            <p>lorem ipsum siem is iem ibuejimejo l happy glad mayhem becasue plaese why and now I am. Wow! I really like. congrats.</p>
         </div>
-        <div class="grid-item team">
-            <h2>Meet the Team</h2>
+        <div class="grid-item content3">
+            <p>Class Assembly Today!</p>
+            <p>lorem ipsum siem is iem ibuejimejo l happy glad mayhem becasue plaese why and now I am. Wow! I really like. congrats.</p>
         </div>
-        <div class="grid-item blank"></div>
-
+        <div class="grid-item content4">
+            <p>Web Design Class wins second place!</p>
+            <p>lorem ipsum siem is iem ibuejimejo l happy glad mayhem becasue plaese why and now I am. Wow! I really like. congrats.</p>
+        </div>
+        <div class="grid-item resources">
+            <p>Resources</p>
+            <ul>
+                <li>W3schools</li>
+                <li>EPS</li>
+                <li>Flux Academy</li>
+            </ul>
+        </div>
     </div>
     <div class="footer">
         Created by &copy; Sara
