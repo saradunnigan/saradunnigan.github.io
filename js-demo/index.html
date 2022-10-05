@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body>
+    <h1>Let's learn javascript</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert('Warning! You are navigating away from my page')">school website</a>
+    <hr>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Nana nana nana nana, Batman'; document.getElementById('secret').style.display='block'; ">Reveal</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h3>Two Truths and a lie</h3>
+    <p>Which one is the lie?</p>
+    <ol>
+        <li>I have 2 siblings</li>
+        <li id="select">I wasn't born in Washington</li>
+        <li>I have one dog and one cat</li>
+    </ol>
+    <p id="lie"></p>
+    <button onclick="document.getElementById('lie').innerHTML='I was not born is Washington is the lie!'">Lie!</button>
+
+    <hr>
+    <h2>How do we change images with javascript?</h2>
+    <img src="images/closed-door.jpg" alt="door closed" id="my-image">
+    <button onclick="document.getElementById('my-image').src='images/open-door.jfif'">Open Door</button>
+    <button onclick="document.getElementById('my-image').src='images/closed-door.jpg'">Close Door</button>
+
+    <hr>
+    <h2>How do I change css styles with a button?</h2>
+    <p id="alice">Hi I am Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';document.getElementById('alice').style.fontSize='5px'">Cake: Eat </button>
+    <button onclick="document.getElementById('alice').style.fontSize='40px'">Potion: Drink me</button>
+    <button onclick="normalAlice()">Return to Normal</button>
+
+    <hr>
+    <h2>How do we return user input data?</h2>
+    <button onclick="askName();">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <hr>
+    <h2>How do I change word spacing?</h2>
+    <p id="word">This is my example sentence.</p>
+    <button onclick="spacing()">Closer!</button>
+    <button onclick="spacingBig()">Further!</button>
+    <button onclick="spacingNormal()">back to Normal</button>
+
+    <hr>
+    <h2>How do I change where the text is aligned?</h2>
+    <p id="sentence">This is my text.</p>
+    <button onclick="alignRight()">Right</button>
+    <button onclick="alignCenter()">Center</button>
+    <button onclick="alignLeft()">Left</button>
+
+
+    <script>
+        function normalAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '20px';
+        }
+
+        function askName() {
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt("What is your name?");
+            //decide what to do
+            if (name === "batman") {
+                nameParagraph.innerHTML = "Welcome to the batcave sir";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + "! Nice to meet you."
+            }
+        }
+
+        function spacing() {
+            let space = document.getElementById('word');
+            space.style.wordSpacing = '-5px';
+        }
+
+        function spacingBig() {
+            let space = document.getElementById('word');
+            space.style.wordSpacing = '10px';
+        }
+
+        function spacingNormal() {
+            let space = document.getElementById('word');
+            space.style.wordSpacing = '0px';
+        }
+
+        function alignRight() {
+            let float = document.getElementById('sentence');
+            float.style.textAlign = 'right';
+        }
+
+        function alignLeft() {
+            let float = document.getElementById('sentence');
+            float.style.textAlign = 'left';
+        }
+
+        function alignCenter() {
+            let float = document.getElementById('sentence');
+            float.style.textAlign = 'center';
+        }
+    </script>
+</body>
+
+</html>
