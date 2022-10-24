@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara's Truth and Lie Game</title>
+</head>
+
+<body>
+    <h1>Sara's Truth and a Lie Game</h1>
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label> <br>
+        <input type="text" name="greet" id="fname"><br>
+        <label for="lname">Last Name:</label> <br>
+        <input type="text" name="greet" id="lname"><br>
+        <label for="age">Age:</label> <br>
+        <input type="text" name="greet" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <hr>
+    <h2>Warm up trivial question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="triviaAnswer"></p>
+    <form action="">
+        <input type="radio" name="trivia" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label> <br>
+        <input type="radio" name="trivia" id="tuna">
+        <label for="tuna">Canned Tuna</label> <br>
+        <input type="radio" name="trivia" id="honey">
+        <label for="honey">Honey</label> <br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia();">
+    <hr>
+    <h2>Two Truths and a lie. Which one is the lie?</h2>
+    <p id="lieAnswer">Which one is the lie?</p>
+    <form action="">
+        <input type="radio" name="facts" id="truth">
+        <label for="truth">I have two sibilings</label> <br>
+        <input type="radio" name="facts" id="lie">
+        <label for="lie">I was born in San Fransisco</label> <br>
+        <input type="radio" name="facts" id="truth2">
+        <label for="truth2">I have one dog and one cat</label> <br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="game();">
+
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
