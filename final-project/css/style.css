@@ -1,0 +1,81 @@
+.container {
+    margin: 20px 100px;
+    padding: 50px;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -14px;
+    padding: 0px;
+}
+
+.title {
+    color: red;
+    text-align: center;
+    font-family: filmotype-maxwell, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    margin-bottom: -14px;
+    padding: 0px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    padding: 14px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-size: 30px;
+}
+
+.nav li a:hover {
+    color: beige;
+}
+
+body {
+    background-color: bisque;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*grid stuff*/
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+    background-color: white;
+}
+
+.navmenu {
+    grid-column: 1 /span 4;
+    grid-row: 1;
+}
