@@ -1,8 +1,8 @@
 .container {
-    margin: 20px 100px;
+    margin: -50px 100px;
     padding: 50px;
-    border: 5px solid black;
-    background-color: white;
+    border: 2px solid black;
+    background-color: rgb(97, 162, 172);
 }
 
 .center {
@@ -30,6 +30,9 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: novecento-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .nav li {
@@ -68,14 +71,32 @@ body {
 .grid-container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .grid-item {
-    background-color: white;
+    background-color: none;
 }
 
 .navmenu {
     grid-column: 1 /span 4;
     grid-row: 1;
+}
+
+.hours {
+    grid-column: 1 /span 2;
+    grid-row: 2;
+}
+
+.mainpic {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    width: 100%;
+    background-color: tan;
 }
