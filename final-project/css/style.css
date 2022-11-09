@@ -1,8 +1,8 @@
 .container {
     margin: -50px 100px;
     padding: 50px;
-    border: 2px solid black;
     background-color: rgb(97, 162, 172);
+    opacity: 0.8;
 }
 
 .center {
@@ -55,6 +55,7 @@
 
 body {
     background-color: bisque;
+    background-image: url("/images/beach.jpg");
 }
 
 .hero-text {
