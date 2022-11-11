@@ -19,47 +19,60 @@
     <div class="grid-item nav-menu">
 
         <h1 class="title">Live Water Surf Shop</h1>
-        <img class="center" src="images/surfboard.png" alt="Surfboard">
-        <ul class="nav hero-text">
+        <img class="center" src="images/surfboard.png" alt="Surfboard" style="position: relative;
+        z-index: 2;">
+        <ul class="nav hero-text" style="z-index: 3;">
             <li> <a href="index.html">Home</a></li>
             <li> <a href="about.html">About</a></li>
             <li> <a href="shop.html">Shop</a></li>
+            <li class="dropdown"> <a href="#">Directions</a></li>
+            <div class="dropdown-content">
+                <a href="stinson.html">Stinson</a>
+                <a href="fairfax.html">Fairfax</a>
+            </div>
+
         </ul>
     </div>
 
-    <div class="container grid-container">
-        <div class="grid-item hours">
-            <h2>Store Hours:</h2>
-            <h3>Stinson:</h3>
-            <table style="color:red">
-                <tr>
-                    <td>Monday-Thursday</td>
-                    <td> 10:00-5:00</td>
-                </tr>
-                <tr>
-                    <td>Friday-Sunday</td>
-                    <td>10:00-6:00</td>
-                </tr>
-            </table>
-            <h3>Fairfax:</h3>
-            <table style="color:red">
-                <tr>
-                    <td>Sunday-Thursday</td>
-                    <td> 10:00-5:00</td>
-                </tr>
-                <tr>
-                    <td>Friday and Saturday</td>
-                    <td>10:00-6:00</td>
-                </tr>
+    <div class="container grid-container" style="position: relative;
+    z-index: 1;">
+        <div class="grid-item hours" style="text-align:center">
+            <div style="display: inline-block; text-align: left;">
+                <h2>Store Hours:</h2>
+                <h3>Stinson:</h3>
+                <table style="color:red">
+                    <tr>
+                        <td>Monday-Thursday</td>
+                        <td> 10:00-5:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday-Sunday</td>
+                        <td>10:00-6:00</td>
+                    </tr>
+                </table>
+                <h3>Fairfax:</h3>
+                <table style="color:red">
+                    <tr>
+                        <td>Sunday-Thursday</td>
+                        <td> 10:00-5:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday and Saturday</td>
+                        <td>10:00-6:00</td>
+                    </tr>
 
-            </table>
-            <p>*hours are subject to change by swells discretion*</p>
+                </table>
+                <p>*hours are subject to change by swells discretion*</p>
+            </div>
         </div>
         <div class="grid-item mainpic">
-            <img src="images/shop.jpg" alt="Shop Picture" style="display: block; width: 100%;">
+            <img src="images/shop.jpg" alt="Shop Picture" style="display: block; width: 100%; border-radius: 10px;">
 
         </div>
 
+        <div class="store">
+            <p>Visit either of our locations, the historic 'Avillas Barn' in the heart of Stinson Beach or downtown Fairfax. Stop by for a taste of "aloha" and experience the sweetness of Live Water Surf and Skate!</p>
+        </div>
     </div>
 
     <!-- <div class="footer">
