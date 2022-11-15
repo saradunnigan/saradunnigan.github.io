@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Water</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ito6wdi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ito6wdi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ito6wdi.css">
+
+
+</head>
+
+<body>
+
+    <div class="grid-item nav-menu">
+
+        <h1 class="title">Live Water Surf Shop</h1>
+        <img class="center" src="images/surfboard.png" alt="Surfboard" style="position: relative;
+        z-index: 2;">
+        <ul class="nav hero-text" style="z-index: 3;">
+            <li> <a href="index.html" target="_blank">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="shop.html">Shop</a></li>
+            <li><a href="directions.html">Directions</a> </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container grid-container" style="position: relative;
+    z-index: 1;">
+        <div class="h1c">
+            <h1>Reach out with any questions!</h1>
+        </div>
+
+        <div class="contactMain">
+            <p id="contactInfo">Contact Info</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <input type="radio" name="info" id="phone">
+                <label for="phone">Phone</label> <br>
+                <input type="radio" name="info" id="email">
+                <label for="email">Email</label> <br>
+                <input type="radio" name="info" id="person">
+                <label for="person">In-store</label> <br>
+            </form>
+            <br>
+            <input type="button" value="SUBMIT" onclick="contact();">
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        function contact() {
+
+            let contact = document.getElementById("contactInfo");
+
+            let phoneSelected = document.getElementById("phone").checked;
+            let emailSelected = document.getElementById("email").checked;
+            let personSelected = document.getElementById("person").checked;
+
+
+            if (phoneSelected) {
+                contact.innerHTML = "Stinson: (415) 868 - 0333  Fairfax: (415) 448 - 5994";
+            } else if (emailSelected) {
+                contact.innerHTML = "livewatersurfskate@gmail.com";
+            } else if (personSelected) {
+                contact.innerHTML = "Stinson: 3450 Shoreline Hwy. Stinson Beach Fairfax: 69 Broadway Ave.Fairfax ";
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
