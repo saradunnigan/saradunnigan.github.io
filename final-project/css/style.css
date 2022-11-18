@@ -58,7 +58,7 @@
 
 body {
     background-color: bisque;
-    background-image: url("/images/beach.jpg");
+    background-image: url("../images/beach.jpg");
 }
 
 .hero-text {
